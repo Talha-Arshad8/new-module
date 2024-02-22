@@ -1,0 +1,451 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.parent{
+    height: 50px;
+    background-color: rgba(61, 57, 57, 0.7);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+}
+.parent>span>i{
+    color: white;
+    font-size: 16px;
+}
+.parent>span{
+    color: lightgray;
+    padding-top: 03px;
+    margin: 17px;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+.parent>span:hover{
+    color: white;
+    cursor: pointer;
+}
+.first-container{
+    height: 1100px;
+   
+    position: relative;
+    background-image: url(https://www.apple.com/v/apple-vision-pro/b/images/overview/hero/portrait_base__bwsgtdddcl7m_large_2x.jpg);
+    background-size: cover;
+    text-align: center;
+    cursor: pointer;
+}
+.child-one{
+   position : absolute;
+    bottom: 10px;
+    left: 370px;
+}
+h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+h3{
+    font-size: 30px;
+    font-weight: lighter;
+    font-family:'Raleway', sans-serif;
+    margin: 0px;
+
+}
+h4{
+    font-size: 25px;
+    color: gray;
+    font-weight: lighter;
+    margin-top: 15px;
+}
+.child-one>p{
+    font-size: 20px;
+     color: rgb(84, 84, 244);
+     margin: 15px;
+}
+
+.second-container{
+    position: relative;
+    height: 400px;
+    background-image: url(https://www.apple.com/v/iphone-15-pro/c/images/overview/welcome/hero_endframe__ov6ewwmbhiqq_large_2x.jpg);
+    background-size: cover;
+    text-align: center;
+    background-color: black;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.child-two{
+    position: absolute;
+    right: 380px;
+}
+.child-two>h1{
+    color: white;
+}
+.child-two>h3{
+    color: white;
+}
+.child-two>p{
+    font-size: 20px;
+    color:rgb(84, 84, 244) ;
+}
+.third-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-wrap: wrap;
+
+}
+.inner{
+    position: relative;
+    text-align: center;
+}
+.most-inner{
+    position: absolute;
+     top: 20px;
+    left: 100px;
+}
+.most-in>p{
+    font-size: 25px;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    box-shadow: 0px -1px 2px gray;
+    flex-wrap: wrap;
+}
+.footer-first>p{
+    text-align: left;
+    margin-left: 30px;
+}
+.apple>span{
+ color:rgb(84, 84, 244) ;
+ text-decoration: underline;
+}
+@media (max-width:450px){
+    .third-container{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 10px;
+        /* margin-left: 20px;
+        margin-right: 20px; */
+        width: 380px;
+    
+    }
+    .second-container{
+        position: relative;
+        height: 100px;
+        width: 400px;
+        background-image: url(https://www.apple.com/v/iphone-15-pro/c/images/overview/welcome/hero_endframe__ov6ewwmbhiqq_large_2x.jpg);
+        background-size: cover;
+        text-align: center;
+        background-color: black;
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+    .child-two{
+        position: absolute;
+        right: 100px;
+    }
+    .child-two>h1{
+        color: white;
+        font-size: 10px;
+    }
+    .child-two>h3{
+        color: white;
+        font-size: 10px;
+    }
+    .child-two>p{
+        font-size: 10px;
+        color:rgb(84, 84, 244) ;
+    }
+    .first-container{
+        height: 400px;
+        width: 400px;
+        position: relative;
+        background-image: url(https://www.apple.com/v/apple-vision-pro/b/images/overview/hero/portrait_base__bwsgtdddcl7m_large_2x.jpg);
+        background-size: cover;
+        text-align: center;
+        cursor: pointer;
+    }
+    .child-one{
+        position : absolute;
+         bottom: 10px;
+         left: 120px;
+     }
+     h1{
+         font-size: 15px;
+         margin-bottom: 10px;
+     }
+     h3{
+         font-size: 10px;
+         font-weight: lighter;
+         font-family:font-family: 'Raleway', sans-serif;
+         margin: 0px;
+     
+     }
+     h4{
+         font-size: 10px;
+         color: gray;
+         font-weight: lighter;
+         margin-top: 15px;
+     }
+     .child-one>p{
+         font-size: 10px;
+          color: rgb(84, 84, 244);
+          margin: 15px;
+     }
+     .footer-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        box-shadow: 0px -1px 2px gray;
+        flex-wrap: wrap;
+        width: 380px;
+    }
+    .footer-first>p{
+        text-align: left;
+        margin-left: 30px;
+    }
+    .parent{
+        height: 30px;
+        background-color: rgba(61, 57, 57, 0.7);
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        width: 380px;
+        z-index: 1;
+    
+    }
+    .parent>span>i{
+        color: white;
+        font-size: 10px;
+    }
+    .parent>span{
+        color: lightgray;
+        padding-top: 5px;
+        margin: 8px;
+        margin-left: 3px;
+        font-size: 5px;
+        font-family:font-family: 'Raleway', sans-serif;
+    }
+}
+@media (min-width:450px) and (max-width:800px){ 
+    .third-container{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 10px;
+        /* margin-left: 20px;
+        margin-right: 20px; */
+        
+    
+    }
+    .second-container{
+        position: relative;
+        height: 180px;
+        background-image: url(https://www.apple.com/v/iphone-15-pro/c/images/overview/welcome/hero_endframe__ov6ewwmbhiqq_large_2x.jpg);
+        background-size: cover;
+        text-align: center;
+        background-color: black;
+        margin-top: 10px;
+        flex-wrap: wrap;
+        max-width: 750px;
+    }
+    .child-two{
+        position: absolute;
+        right: 240px;
+    }
+    .child-two>h1{
+        color: white;
+        font-size: 15px;
+    }
+    .child-two>h3{
+        color: white;
+        font-size: 10px;
+    }
+    .child-two>p{
+        font-size: 10px;
+        color:rgb(84, 84, 244) ;
+    }
+    .first-container{
+        height: 500px;
+        max-width: 600px;
+        position: relative;
+        background-image: url(https://www.apple.com/v/apple-vision-pro/b/images/overview/hero/portrait_base__bwsgtdddcl7m_large_2x.jpg);
+        background-size: cover;
+        text-align: center;
+        cursor: pointer;
+    }
+    .child-one{
+        position : absolute;
+         bottom: 10px;
+         left: 180px;
+     }
+     h1{
+         font-size: 15px;
+         margin-bottom: 10px;
+     }
+     h3{
+         font-size: 13px;
+         font-weight: lighter;
+         font-family:font-family: 'Raleway', sans-serif;
+         margin: 0px;
+     
+     }
+     h4{
+         font-size: 10px;
+         color: gray;
+         font-weight: lighter;
+         margin-top: 15px;
+     }
+     .child-one>p{
+         font-size: 10px;
+          color: rgb(84, 84, 244);
+          margin: 15px;
+     }
+     .footer-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        box-shadow: 0px -1px 2px gray;
+        flex-wrap: wrap;
+    }
+    .footer-first>p{
+        text-align: left;
+        margin-left: 30px;
+    }
+    .parent{
+        height: 30px;
+        background-color: rgba(61, 57, 57, 0.7);
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        max-width: 800px;
+        z-index: 1;
+    
+    }
+    .parent>span>i{
+        color: white;
+        font-size: 15px;
+    }
+    .parent>span{
+        color: lightgray;
+        padding-top: 5px;
+        margin: 8px;
+        margin-left: 3px;
+        font-size: 7px;
+        font-family:font-family: 'Raleway', sans-serif;
+    }
+}
+@media (min-width:800px) and (max-width:950px){ 
+    .third-container{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 10px;
+        /* margin-left: 20px;
+        margin-right: 20px; */
+        
+    
+    }
+    .second-container{
+        position: relative;
+        height: 250px;
+        background-image: url(https://www.apple.com/v/iphone-15-pro/c/images/overview/welcome/hero_endframe__ov6ewwmbhiqq_large_2x.jpg);
+        background-size: cover;
+        text-align: center;
+        background-color: black;
+        margin-top: 10px;
+        flex-wrap: wrap;
+        max-width: 950px;
+    }
+    .child-two{
+        position: absolute;
+        right: 350px;
+    }
+    .child-two>h1{
+        color: white;
+        font-size: 20px;
+    }
+    .child-two>h3{
+        color: white;
+        font-size: 15px;
+    }
+    .child-two>p{
+        font-size: 15px;
+        color:rgb(84, 84, 244) ;
+    }
+    .first-container{
+        height: 700px;
+        max-width: 950px;
+        position: relative;
+        background-image: url(https://www.apple.com/v/apple-vision-pro/b/images/overview/hero/portrait_base__bwsgtdddcl7m_large_2x.jpg);
+        background-size: cover;
+        text-align: center;
+        cursor: pointer;
+    }
+    .child-one{
+        position : absolute;
+         bottom: 3px;
+         left: 340px;
+     }
+     h1{
+         font-size: 20px;
+         margin-bottom: 10px;
+     }
+     h3{
+         font-size: 15px;
+         font-weight: lighter;
+         font-family:font-family: 'Raleway', sans-serif;
+         margin: 0px;
+     
+     }
+     h4{
+         font-size: 15px;
+         color: gray;
+         font-weight: lighter;
+         margin-top: 15px;
+     }
+     .child-one>p{
+         font-size: 15px;
+          color: rgb(84, 84, 244);
+          margin: 15px;
+     }
+     .footer-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        box-shadow: 0px -1px 2px gray;
+        flex-wrap: wrap;
+    }
+    .footer-first>p{
+        text-align: left;
+        margin-left: 30px;
+    }
+    .parent{
+        height: 40px;
+        background-color: rgba(61, 57, 57, 0.7);
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        max-width: 950px;
+        z-index: 1;
+    
+    }
+    .parent>span>i{
+        color: white;
+        font-size: 15px;
+    }
+    .parent>span{
+        color: lightgray;
+        padding-top: 5px;
+        margin: 8px;
+        margin-left: 3px;
+        font-size: 15px;
+        font-family:font-family: 'Raleway', sans-serif;
+    }
+}
+
+
+

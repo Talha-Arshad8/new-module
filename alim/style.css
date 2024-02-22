@@ -1,0 +1,113 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+*{
+    font-family: sans-serif;
+}
+.main{
+    background-color: rgba(1, 1,91,0.9);
+    color: white;
+    flex-grow: 1;
+    height: 80px;
+}
+.btn:hover{
+    background-color:white;
+    color: black;
+}
+.btn{
+    border-radius: 0px;
+}
+.share{
+    position: fixed;
+    top: 180px;
+    font-size: 20px;
+    right: 0px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: red;
+    border-top-left-radius: 5px;
+    color: white;
+    border-bottom-left-radius: 5px;
+    height: 30px;
+    width: 30px;
+}
+.icon-bar{
+    cursor: pointer;
+}
+.main-container{
+    background-color:  rgb(17, 17, 62);
+    height: 100%;
+    position: relative;
+}
+.last{
+    background-color: rgb(29, 29, 79);
+}
+label{
+    border: 1px solid black;
+    height: 80px;
+    width: 500px;
+    position: relative;
+    background-color: rgb(17, 17, 62);
+}
+.sub{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+pre{
+    color: white;
+}
+.input-t{
+    flex-grow: 1;
+    padding-left: 10px;
+    background-color:rgb(17, 17, 62) ;
+    border: none;
+    height: 70px;
+    width: 400px;
+}
+.icon-social{
+    color: rgb(116, 115, 115);
+}
+h6{
+    border: 1px solid black;
+    position: absolute;
+    top: 20px;
+    background-color:rgba(255, 255, 255,0.1);
+    width: 400px;
+    height: 60px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+h5{
+    background-color:rgba(255, 255, 255,0.1) ;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+@media (max-width:550px) {
+    label{
+        border: 1px solid black;
+        height: 80px;
+        width: 400px;
+        position: relative;
+        background-color: rgb(17, 17, 62);
+    }
+    .input-t{
+        flex-grow: 1;
+        padding-left: 10px;
+        background-color:rgb(17, 17, 62) ;
+        border: none;
+        height: 70px;
+        width: 200px;
+    }
+    .last-child{
+        text-align: center;
+    }
+    .first{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    
+}

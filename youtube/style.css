@@ -1,0 +1,118 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.web-container{
+height: 100ch;
+width: 100%;
+
+}
+.navbar-logo{
+    width: 100%;
+}
+
+.input-group{
+    width: 50%;
+    height: 40px;
+}
+.icon{
+    width: 10%;
+}
+.search-container{
+    width: 90%;
+}
+.search{
+    font-size: 20px;
+}
+.video-cards{
+    overflow-y: scroll;
+    height: 85vh;
+}
+.mic{
+    font-size: 20px;
+}
+.form-control{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.first-container{
+    border-right: 1px solid lightgray;
+
+}
+.first-container>span>p{
+    font-size: 10px;
+}
+.subtitle{
+    overflow-x: scroll;
+}
+.card:hover{
+    background-color: lightgray;
+    cursor: pointer;
+
+}
+.mic:hover{
+    cursor: pointer;
+    background-color: lightgray;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+.subtitle>span:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+.icon:hover{
+    cursor: pointer;
+}
+.t{
+    padding:03px;
+    font-size: 20px;
+}
+.last-container{
+   
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    
+}
+@media (max-width:550px) {
+    .first-container{
+        display: none;
+    }
+    .search-container>input{
+        display: none;
+    }
+    .search-container{
+        
+    }
+    .image{
+        height: 20px;
+        width: 20px;
+        margin-top: 07px;
+    }
+    .card>img{
+        height: 250px;
+    }
+    .card{
+        width: 90%;
+    }
+
+    .write{
+        font-size: 16px;
+    }
+    .icon{
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+    }
+}
+@media (min-width:550px) and (max-width:1300px){
+    .last-container{
+        display: none;
+    }
+
+}
